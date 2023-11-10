@@ -1,0 +1,205 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    background: rgb(188, 237, 255);
+    background: linear-gradient(
+        0deg,
+        rgb(148, 189, 255) 33%,
+        rgba(79, 108, 219, 1) 100%
+    );
+    pointer-events: none;
+}
+
+.banner1 img {
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin-top: -13rem;
+    margin-left: -15rem;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.banner2 img {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -13rem;
+    margin-right: -15rem;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+h1 {
+    font-family: "Agbalumo";
+    font-size: 145px;
+    color: #e3e3e3;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: -1px -1px 0 #273963, 1px -1px 0 #273963, -1px 1px 0 #273963,
+        5px 5px 0 #273963;
+}
+h2 {
+    font-family: "Birthstone";
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 0;
+    color: #273963;
+}
+
+.HeaderTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-container {
+    position: relative;
+    margin: auto;
+    margin-bottom: -7rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: -30rem;
+}
+
+.image-container img {
+    animation: float-right 6s infinite linear;
+}
+
+.image-container2 {
+    position: relative;
+    margin: auto;
+    margin-bottom: -13rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: -39rem;
+}
+
+.image-container2 img {
+    animation: float-left 6s infinite linear;
+    width: 65rem;
+}
+
+.image-container3 {
+    position: relative;
+    margin: auto;
+    margin-bottom: -17rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: -37rem;
+}
+
+.image-container3 img {
+    animation: float-right 6s infinite linear;
+}
+
+.image-container4 {
+    position: relative;
+    margin: auto;
+    margin-bottom: -19rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: -35rem;
+}
+
+.image-container4 img {
+    animation: float-left 6s infinite linear;
+}
+
+.image-container5 {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: -30rem;
+}
+
+.image-container5 img {
+    animation: float-right 6s infinite linear;
+}
+
+@keyframes float-right {
+    from {
+        transform: rotate(0deg) translateY(-12px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateY(-12px) rotate(-360deg);
+    }
+}
+
+@keyframes float-left {
+    from {
+        transform: rotate(0deg) translateY(-12px) rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg) translateY(-12px) rotate(360deg);
+    }
+}
+
+img {
+    width: 80rem;
+    position: relative;
+    z-index: 2;
+    mask-image: radial-gradient(
+        circle 100px at var(--maskX) var(--maskY),
+        transparent 0%,
+        black 100%
+    );
+    -webkit-mask-image: radial-gradient(
+        circle 100px at var(--maskX) var(--maskY),
+        transparent 0%,
+        black 100%
+    );
+}
+
+.hidden-text-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 40rem;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Amatic SC";
+}
+
+.footer img {
+    width: 100vw;
+    opacity: 50%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: -15rem;
+}
